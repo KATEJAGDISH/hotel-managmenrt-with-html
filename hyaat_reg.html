@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> hyaat_reg form </title>
+</head>
+<body>
+   <H1>World of Hyatt</H1> <HR>
+    <form action="#" method="post">
+
+   <h2>personal details </h2>
+   <HR>
+    <H3><label for="name "> ENTER YOUR NAME </label><input type="text" required  placeholder="first name      mid name    last name "> </H3> 
+    <H3><label for="email">Enter email </label><input type="email" required placeholder="assddaw@gmai.com" > </H3>
+    <H3><label for="phone number"> Phone Number</label></H3>
+    <select name="phonecode" required>
+        <option selected hidden value="">Select Code</option>
+        <option value="IND+91">IND+91</option>
+        <option value="USA+44">USA+44</option>
+        <option value="FRAN +33">FRAN +33</option>
+        <option value="ITHALY +39">ITHALY +39</option>
+        <option value="INDO +628">INDO +628</option>
+        <option value="BEL +324">BEL +324</option>
+        <option value="AUS +436">AUS +436</option>
+       </select>
+       <input type="tel" id="phone" name="phoneno" maxlength="10" minlength="10"  required>
+
+    <h3> <label for="aadhar  card"> Aadhar   Number</label>
+    <input type="text"   maxlength="12" minlength="12" required></h3>
+    <label for="id photograph" > Upload your aadhar i'd photograph </label>
+    <input type="file" accept="image/" required>
+    <h3> <label for="pan card"> pan number</label>
+    <input type="text" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"
+ placeholder="format : ABCDE1234f"></h3>
+ <H4><LAbel for="GENDER"> ENTER GENDER</LAbel></H4>
+ <input type="radio" name="GENDER" value="M" checked> <LAbel>MALE</LAbel>
+ <input type="radio" name="GENDER" value="F" > <LAbel>FEMALE</LAbel>
+ <input type="radio" name="GENDER" value="o"> <LAbel>OTHER</LAbel>
+ <hr>
+ <h2>
+    Booking  details </h2><hr>
+     <h3>Looking for </h3>
+     <select name="looking"  required>
+        <option value="ROOM">ROOM</option>
+        <option value="SPECIAL EVENTS">SPECIAL EVENTS</option>
+        <option value="WEDDINGS">WEDDINGS</option>
+        <option value="MEETINGS">MEETINGS</option>
+     </select>
+    <h3>How  many rooms are required?</h3>
+    <input type="number"minlength="1" maxlength="150" required>
+    <br><br>
+ <label for="adult">  Adults Per Room   </label>
+ <select  id="roomadult" tabindex="-1" title="" name="adult" required>
+   <option value="1" selected="">1</option>
+   <option value="2">2</option>
+   <option value="3">3</option>
+   <option value="4">4</option>
+ </select>
+ <label for=" Child "> Child 
+</label>
+ <select id="roomchild"  tabindex="-1" title="" name="child" required>
+   <option value="0" selected="">0</option>
+   <option value="1">1</option>
+   <option value="2">2</option>
+   <option value="3">3</option>
+   <option value="4">4</option>
+ </select> <br>        <br>
+ <label for="Check in ">Check in </label>
+        <input type="date"  placeholder="Checkin"   name="checkin" required>      
+        <label for="Check out">Check out</label>  
+        <input type="date"  placeholder="CheckOut" id="Checkout" name="checkout" required >
+        <br>    
+        <h3><i>        <input type="checkbox" required> all information is correct
+        </i></h3>                                                 
+ <input type="submit" value="sumbmit">
+</form>
+
+</body>
+</html>
